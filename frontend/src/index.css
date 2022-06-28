@@ -10,11 +10,12 @@ body {
   font-family: 'Poppins', sans-serif;
   height: 100vh;
   background-color: rgb(43, 43, 43);
+  background-image: linear-gradient(to bottom, rgb(100, 100, 100) 20%, rgb(22, 22, 22));
 }
 
 a {
   text-decoration: none;
-  color: rgb(156, 156, 156);
+  color: rgb(228, 228, 228);
 }
 
 p {
@@ -34,7 +35,7 @@ h1,
 h2 {
   font-weight: 600;
   margin-bottom: 10px;
-  color: gray;
+  color: rgb(202, 98, 0);
 }
 
 h3 {
@@ -91,7 +92,7 @@ h3 {
 }
 
 .heading p {
-  color: #828282;
+  color:rgb(221, 221, 221);
 }
 
 .goals {
@@ -132,7 +133,7 @@ h3 {
   width: 100%;
   padding: 10px;
   border: 1px solid #e6e6e6;
-  border-radius: 5px;
+  /* border-radius: 5px; */
   margin-bottom: 10px;
   font-family: inherit;
 }
@@ -141,14 +142,14 @@ h3 {
   text-align: left;
   display: block;
   margin: 0 0 5px 3px;
-  color: gray;
+  color: rgb(194, 194, 194);
 }
 
 .btn {
   padding: 12px 20px;
   border-style: none;
-  border-radius: 5px;
-  background: gray;
+  /* border-radius: 5px; */
+  background: transparent;
   color: rgb(255, 255, 255);
   font-size: 16px;
   font-weight: 700;
@@ -158,6 +159,7 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-shadow: 0px 0px 2px black;
 }
 
 .btn svg {
@@ -173,6 +175,10 @@ h3 {
 .btn-block {
   width: 100%;
   margin-bottom: 20px;
+  margin-top: 20px;
+  background: rgb(32, 32, 32);
+  padding:15px;
+  color: rgb(155, 155, 155);
 }
 
 .loadingSpinnerContainer {
@@ -221,5 +227,11 @@ h3 {
 
   .heading p {
     font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 385px) {
+  .heading p {
+   font-size: 1.2rem;
   }
 }
